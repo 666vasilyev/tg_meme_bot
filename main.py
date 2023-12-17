@@ -144,5 +144,9 @@ def demo(message):
     photo = open('1.jpeg', 'rb')
     bot.send_photo(message.from_user.id, photo, reply_markup=telebot.types.ReplyKeyboardRemove())
 
+@bot.message_handler(func=lambda message: True, content_types=['text'])
+def handle_text(message):
+    bot.send_message(message.chat.id, "Принято")
 
+    
 bot.polling(none_stop=True, interval=0)
