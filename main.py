@@ -9,7 +9,7 @@ def textfunc(text, place):
     d = ImageDraw.Draw(img)
 
     imgWidth, imgHeight = img.size
-    font = ImageFont.truetype("impact.ttf", imgHeight // 16)
+    font = ImageFont.truetype("Impact.ttf", imgHeight // 16)
 
     offset = imgWidth // 256 + 1
     shadowColor = 'black'
