@@ -87,7 +87,8 @@ text_d = ''
 @bot.message_handler(func=lambda message: True)
 def echo_all(message):
     # Отвечаем на любое текстовое сообщение
-    bot.reply_to(message, "Принято")
+    bot.send_message(message.chat.id, "Принято")
+
 
 
 @bot.message_handler(content_types=['text', 'photo'])
