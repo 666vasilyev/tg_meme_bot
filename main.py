@@ -78,7 +78,7 @@ def demot(text):
     return None
 
 
-bot = telebot.TeleBot('5484934071:AAEYR1_ynWdrw3a2hRhJ4b-Iu5_RnojF9yQ')
+bot = telebot.TeleBot('6851269224:AAEEZnqV5HKbp8qQ5bA1WojPSZVdKqTyNQY')
 text_up = ''
 text_low = ''
 text_d = ''
