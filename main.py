@@ -53,7 +53,7 @@ def demot(text):
     ram.paste(img, (25, 10))
     imgWidth, imgHeight = ram.size
     d = ImageDraw.Draw(ram)
-    font = ImageFont.load_default()
+    font = ImageFont.truetype("impact.ttf", imgHeight // 16)
     offset = imgWidth // 256 + 1
     shadowColor = 'black'
     l = (len(text) * (imgHeight // 16)) // 2.4
